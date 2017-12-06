@@ -1,0 +1,13 @@
+<div class="nav">
+  <div class="ui grid">
+    <div class="four wide column"></div>
+
+    <div class="eight wide column">
+      <a href="/posts"><h1><%= blog.title %></h1></a>
+      <%if(user){%>
+      	 <p> 当前用户为：<%= user.name%></p>
+      <%}%>
+      <p><%= blog.description %></p>
+    </div>
+  </div>
+</div>
